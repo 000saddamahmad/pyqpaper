@@ -1,54 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- PYQpaper.in | High Performance + SEO Friendly Frontend --><!-- Single-file demo (HTML + CSS + JS) – Can be split later --><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PYQpaper.in – Previous Year Question Papers PDF</title>
-<meta name="description" content="Download SSC, Banking, Railway, Defence previous year question papers PDF with mock tests at PYQpaper.in">
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/main.js"></script>
-</head>
-<body>
-<header class="header">
-  <div class="logo">📘 PYQpaper.in</div>
-  <nav>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />  <title>PYQpaper.in – Previous Year Question Papers (SSC, Banking, Railway)</title>  <!-- SEO -->  <meta name="description" content="Download Previous Year Question Papers (PYQs) year-wise for SSC, Banking, Railway, Defence, Teaching, Police, State PSC & UGC NET. Free PDFs & Mock Tests." />
+  <meta name="keywords" content="PYQ Papers, SSC CGL PYQ, SSC CHSL PYQ, Banking PYQ, Railway PYQ, UGC NET PYQ, Previous Year Question Papers PDF" />
+  <meta name="robots" content="index, follow" />  <!-- Performance -->  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />  <style>
+    :root{
+      --primary:#2563eb;
+      --dark:#0f172a;
+      --light:#f8fafc;
+      --gray:#64748b;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Inter,system-ui;background:var(--light);color:var(--dark);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+
+    /* HEADER */
+    header{background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+    .nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+    .logo{font-weight:800;font-size:22px;color:var(--primary)}
+
+    /* MENU */
+    .menu{display:flex;gap:18px}
+    .menu>li{list-style:none;position:relative}
+    .menu>li>a{font-weight:500;padding:8px 6px;display:block}
+
+    /* DROPDOWN */
+    .dropdown{display:none;position:absolute;top:100%;left:0;background:#fff;min-width:260px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);padding:10px}
+    .dropdown strong{display:block;padding:6px 10px;font-size:13px;color:#475569}
+    .dropdown a{display:block;padding:8px 10px;border-radius:8px;font-size:14px}
+    .dropdown a:hover{background:#f1f5f9}
+    .menu li:hover>.dropdown{display:block}
+
+    /* HERO */
+    .hero{max-width:1200px;margin:40px auto;padding:0 16px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+    .hero h1{font-size:38px;line-height:1.2}
+    .hero p{color:var(--gray);margin:14px 0 22px}
+    .btn{background:var(--primary);color:#fff;padding:12px 18px;border-radius:10px;font-weight:600;display:inline-block}
+
+    /* SECTIONS */
+    section{max-width:1200px;margin:50px auto;padding:0 16px}
+    h2{font-size:26px;margin-bottom:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+    .card h3{font-size:18px;margin-bottom:6px}
+    .card p{font-size:14px;color:var(--gray)}
+
+    /* FOOTER */
+    footer{background:#020617;color:#cbd5f5;margin-top:60px}
+    footer .fwrap{max-width:1200px;margin:auto;padding:30px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    footer a{color:#cbd5f5;font-size:14px}
+    .copy{text-align:center;padding:14px;font-size:13px;background:#020617}
+
+    /* MOBILE */
+    @media(max-width:768px){
+      .hero{grid-template-columns:1fr}
+      .menu{display:none}
+    }
+  </style></head>
+<body><header>
+  <nav class="nav">
+    <div class="logo">PYQpaper.in</div>
     <ul class="menu">
-      <li><a href="/">Home</a></li>
-      <li class="dropdown">Exams ▾
-        <ul class="submenu">
-          <li><a href="exams/ssc/ssc-cgl.html">SSC</a></li>
-          <li><a href="exams/banking/ibps-po.html">Banking</a></li>
-          <li><a href="exams/railway/">Railway</a></li>
-          <li><a href="exams/defence/">Defence</a></li>
-          <li><a href="exams/teaching/">Teaching</a></li>
-          <li><a href="exams/police/">Police</a></li>
-          <li><a href="exams/state-psc/">State PSC</a></li>
-          <li><a href="exams/ugc-net/">UGC NET</a></li>
-        </ul>
-      </li>
-      <li><a href="subjects/">Subjects</a></li>
-      <li><a href="mock-tests.html">Mock Tests</a></li>
-      <li><a href="notifications.html">Notifications</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+      <li><a href="/">Home</a></li><li>
+    <a href="#">Exams ▾</a>
+    <div class="dropdown">
+      <strong>SSC</strong>
+      <a href="ssc-cgl.html">SSC CGL</a>
+      <a href="ssc-chsl.html">SSC CHSL</a>
+      <a href="ssc-mts.html">SSC MTS</a>
+      <a href="ssc-gd.html">SSC GD</a>
+
+      <strong>Banking</strong>
+      <a href="ibps-po.html">IBPS PO</a>
+      <a href="ibps-clerk.html">IBPS Clerk</a>
+      <a href="sbi-po.html">SBI PO</a>
+      <a href="rbi-grade-b.html">RBI Grade B</a>
+
+      <strong>Railway</strong>
+      <a href="rrb-ntpc.html">RRB NTPC</a>
+      <a href="rrb-group-d.html">RRB Group D</a>
+      <a href="rrb-je.html">RRB JE</a>
+
+      <strong>Defence</strong>
+      <a href="nda.html">NDA</a>
+      <a href="cds.html">CDS</a>
+      <a href="afcat.html">AFCAT</a>
+
+      <strong>Teaching</strong>
+      <a href="ctet.html">CTET</a>
+      <a href="uptet.html">UPTET</a>
+      <a href="kvs.html">KVS</a>
+
+      <strong>Police</strong>
+      <a href="constable.html">Constable</a>
+      <a href="sub-inspector.html">Sub‑Inspector</a>
+
+      <strong>State PSC</strong>
+      <a href="uppsc.html">UPPSC</a>
+      <a href="mppsc.html">MPPSC</a>
+      <a href="bpsc.html">BPSC</a>
+
+      <strong>UGC NET</strong>
+      <a href="ugc-net-cs.html">Computer Science</a>
+      <a href="ugc-net-history.html">History</a>
+      <a href="ugc-net-geography.html">Geography</a>
+    </div>
+  </li>
+
+  <li><a href="subjects.html">Subjects</a></li>
+  <li><a href="mock-tests.html">Mock Tests</a></li>
+  <li><a href="notifications.html">Notifications</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
   </nav>
-</header>
-
-<section class="hero">
-  <h1>Previous Year Question Papers (PYQ PDF)</h1>
-  <p>SSC, Banking, Railway, Defence – Year Wise PDFs + Free Mock Tests</p>
-</section>
-
-<section class="cards">
-  <a href="exams/ssc/ssc-cgl.html" class="card">SSC CGL PYQ</a>
-  <a href="exams/banking/ibps-po.html" class="card">IBPS PO PYQ</a>
-  <a href="exams/railway/rrb-ntpc.html" class="card">RRB NTPC PYQ</a>
-  <a href="exams/defence/nda.html" class="card">NDA PYQ</a>
-</section>
-
-<footer>
-  <p>© 2025 PYQpaper.in | All Rights Reserved</p>
-</footer>
-</body>
+</header><main>
+  <div class="hero">
+    <div>
+      <h1>Previous Year Question Papers – Year‑Wise PDFs</h1>
+      <p>SSC, Banking, Railway, Defence, Teaching, Police, State PSC & UGC NET PYQs with free mock tests.</p>
+      <a class="btn" href="#">Explore Exams</a>
+    </div>
+    <div class="card">
+      <h3>Why PYQpaper.in?</h3>
+      <p>
+        ✔ 100 PageSpeed Performance<br/>
+        ✔ Mobile Friendly<br/>
+        ✔ SEO Optimized<br/>
+        ✔ Free & Premium PDFs
+      </p>
+    </div>
+  </div>  <section>
+    <h2>Popular Exams</h2>
+    <div class="grid">
+      <div class="card"><h3>SSC CGL</h3><p>2010 – 2024 PYQ PDFs</p></div>
+      <div class="card"><h3>SSC CHSL</h3><p>2012 – 2024 PYQ PDFs</p></div>
+      <div class="card"><h3>IBPS PO</h3><p>Pre + Mains Papers</p></div>
+      <div class="card"><h3>RRB NTPC</h3><p>CBT‑1 & CBT‑2</p></div>
+    </div>
+  </section>
+</main><footer>
+  <div class="fwrap">
+    <div>
+      <h3>PYQpaper.in</h3>
+      <p>India’s trusted platform for Previous Year Question Papers & Mock Tests.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="blog.html">Blog</a><br/>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Exams</h4>
+      <a href="ssc-cgl.html">SSC</a><br/>
+      <a href="ibps-po.html">Banking</a>
+    </div>
+  </div>
+  <div class="copy">© 2025 PYQpaper.in – All Rights Reserved</div>
+</footer></body>
 </html>
