@@ -16,70 +16,48 @@
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="site-header">
-  <div class="header-container">
+  <header>
+  <div class="logo"><a href="/">PYQpaper.in</a></div>
 
-    <div class="logo">
-      <a href="index.html">PYQpaper.in</a>
-    </div>
+  <button class="menu-toggle" id="menuToggle">☰</button>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
+  <nav class="nav-menu" id="navMenu">
+    <ul>
+      <li><a href="/">Home</a></li>
 
-    <nav class="nav-menu" id="navMenu">
-      <ul>
+      <li class="has-dropdown">
+        <a href="#">Exams ▾</a>
+        <ul class="dropdown">
+          <li class="has-dropdown">
+            <a href="#">SSC ▸</a>
+            <ul class="dropdown">
+              <li><a href="ssc-cgl.html">SSC CGL</a></li>
+              <li><a href="ssc-chsl.html">SSC CHSL</a></li>
+              <li><a href="ssc-mts.html">SSC MTS</a></li>
+              <li><a href="ssc-gd.html">SSC GD</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Banking ▸</a>
+            <ul class="dropdown">
+              <li><a href="ibps-po.html">IBPS PO</a></li>
+              <li><a href="ibps-clerk.html">IBPS Clerk</a></li>
+              <li><a href="sbi-po.html">SBI PO</a></li>
+              <li><a href="rbi-grade-b.html">RBI Grade B</a></li>
+            </ul>
+          </li>
+          <li><a href="rrb-ntpc.html">RRB NTPC</a></li>
+        </ul>
+      </li>
 
-        <li><a href="index.html">Home</a></li>
-
-        <li class="has-dropdown">
-          <button class="dropdown-btn">Exams ▾</button>
-
-          <div class="mega-dropdown">
-
-            <div class="dropdown-column">
-              <h4>SSC</h4>
-              <a href="ssc-cgl.html">SSC CGL</a>
-              <a href="ssc-chsl.html">SSC CHSL</a>
-              <a href="ssc-mts.html">SSC MTS</a>
-              <a href="ssc-gd.html">SSC GD</a>
-            </div>
-
-            <div class="dropdown-column">
-              <h4>Banking</h4>
-              <a href="ibps-po.html">IBPS PO</a>
-              <a href="ibps-clerk.html">IBPS Clerk</a>
-              <a href="sbi-po.html">SBI PO</a>
-              <a href="rbi-grade-b.html">RBI Grade B</a>
-            </div>
-
-            <div class="dropdown-column">
-              <h4>Railway</h4>
-              <a href="rrb-ntpc.html">RRB NTPC</a>
-              <a href="rrb-group-d.html">RRB Group D</a>
-              <a href="rrb-je.html">RRB JE</a>
-            </div>
-
-            <div class="dropdown-column">
-              <h4>Others</h4>
-              <a href="nda.html">NDA</a>
-              <a href="cds.html">CDS</a>
-              <a href="ctet.html">CTET</a>
-              <a href="ugc-net.html">UGC NET</a>
-            </div>
-
-          </div>
-        </li>
-
-        <li><a href="subjects.html">Subjects</a></li>
-        <li><a href="mock-tests.html">Mock Tests</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-
-      </ul>
-    </nav>
-
-  </div>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="mock-tests.html">Mock Tests</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
+
 
 <!-- ================= HERO ================= -->
 <section class="hero">
