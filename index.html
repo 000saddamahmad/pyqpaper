@@ -1,116 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PYQpaper.in – Previous Year Question Papers</title>
-  <meta name="description" content="Download Previous Year Question Papers (PYQs) year-wise for SSC, Banking, Railway, Defence, Teaching, Police, State PSC & UGC NET." />
-  <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>PYQpaper.in</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header with Multi-Level Dropdown -->
-<header>
-  <div class="logo"><a href="/">PYQpaper.in</a></div>
+<header class="header">
+  <ul class="menu">
 
-  <button class="menu-toggle" id="menuToggle">☰</button>
+    <li><a href="index.html">Home</a></li>
 
-  <nav class="nav-menu" id="navMenu">
-    <ul>
-      <li><a href="/">Home</a></li>
+    <li class="has-sub">
+      <a href="#">Exams</a>
 
-      <li class="has-dropdown">
-        <a href="#">Exams ▾</a>
-        <ul class="dropdown">
-          <li class="has-dropdown">
-            <a href="#">SSC ▸</a>
-            <ul class="dropdown">
-              <li><a href="ssc-cgl.html">SSC CGL</a></li>
-              <li><a href="ssc-chsl.html">SSC CHSL</a></li>
-              <li><a href="ssc-mts.html">SSC MTS</a></li>
-              <li><a href="ssc-gd.html">SSC GD</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="#">Banking ▸</a>
-            <ul class="dropdown">
-              <li><a href="ibps-po.html">IBPS PO</a></li>
-              <li><a href="ibps-clerk.html">IBPS Clerk</a></li>
-              <li><a href="sbi-po.html">SBI PO</a></li>
-              <li><a href="rbi-grade-b.html">RBI Grade B</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="#">Railway ▸</a>
-            <ul class="dropdown">
-              <li><a href="rrb-ntpc.html">RRB NTPC</a></li>
-              <li><a href="rrb-group-d.html">RRB Group D</a></li>
-              <li><a href="rrb-je.html">RRB JE</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
+      <!-- LEVEL 1 -->
+      <ul class="submenu">
 
-      <li><a href="subjects.html">Subjects</a></li>
-      <li><a href="mock-tests.html">Mock Tests</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+        <!-- SSC -->
+        <li class="has-sub">
+          <a href="#">SSC</a>
+          <ul class="submenu right">
+            <li><a href="ssc-cgl.html">SSC CGL</a></li>
+            <li><a href="ssc-chsl.html">SSC CHSL</a></li>
+            <li><a href="ssc-mts.html">SSC MTS</a></li>
+            <li><a href="ssc-gd.html">SSC GD</a></li>
+          </ul>
+        </li>
+
+        <!-- Banking -->
+        <li class="has-sub">
+          <a href="#">Banking</a>
+          <ul class="submenu right">
+            <li><a href="ibps-po.html">IBPS PO</a></li>
+            <li><a href="ibps-clerk.html">IBPS Clerk</a></li>
+            <li><a href="sbi-po.html">SBI PO</a></li>
+            <li><a href="rbi-grade-b.html">RBI Grade B</a></li>
+          </ul>
+        </li>
+
+        <!-- Railway -->
+        <li class="has-sub">
+          <a href="#">Railway</a>
+          <ul class="submenu right">
+            <li><a href="rrb-ntpc.html">RRB NTPC</a></li>
+            <li><a href="rrb-group-d.html">RRB Group D</a></li>
+            <li><a href="rrb-je.html">RRB JE</a></li>
+          </ul>
+        </li>
+
+        <!-- Defence -->
+        <li class="has-sub">
+          <a href="#">Defence</a>
+          <ul class="submenu right">
+            <li><a href="nda.html">NDA</a></li>
+            <li><a href="cds.html">CDS</a></li>
+            <li><a href="afcat.html">AFCAT</a></li>
+          </ul>
+        </li>
+
+        <!-- Teaching -->
+        <li class="has-sub">
+          <a href="#">Teaching</a>
+          <ul class="submenu right">
+            <li><a href="ctet.html">CTET</a></li>
+            <li><a href="uptet.html">UPTET</a></li>
+            <li><a href="kvs.html">KVS</a></li>
+          </ul>
+        </li>
+
+        <!-- UGC NET -->
+        <li class="has-sub">
+          <a href="#">UGC NET</a>
+          <ul class="submenu right">
+            <li><a href="ugc-net-cs.html">Computer Science</a></li>
+            <li><a href="ugc-net-history.html">History</a></li>
+            <li><a href="ugc-net-geography.html">Geography</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+
+    <li><a href="subjects.html">Subjects</a></li>
+    <li><a href="mock-tests.html">Mock Tests</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
 </header>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div>
-    <h1>Previous Year Question Papers – Year‑Wise PDFs</h1>
-    <p>SSC, Banking, Railway, Defence, Teaching, Police, State PSC & UGC NET PYQs with free mock tests.</p>
-    <a class="btn" href="#">Explore Exams</a>
-  </div>
-  <div class="card">
-    <h3>Why PYQpaper.in?</h3>
-    <p>
-      ✔ High Performance<br>
-      ✔ Mobile Friendly<br>
-      ✔ SEO Optimized<br>
-      ✔ Free PDFs
-    </p>
-  </div>
-</section>
-
-<!-- Popular Exams Section -->
-<section>
-  <h2>Popular Exams</h2>
-  <div class="grid">
-    <div class="card"><h3>SSC CGL</h3><p>2010 – 2024 PYQ PDFs</p></div>
-    <div class="card"><h3>SSC CHSL</h3><p>2012 – 2024 PYQ PDFs</p></div>
-    <div class="card"><h3>IBPS PO</h3><p>Pre + Mains Papers</p></div>
-    <div class="card"><h3>RRB NTPC</h3><p>CBT‑1 & CBT‑2</p></div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="fwrap">
-    <div>
-      <h3>PYQpaper.in</h3>
-      <p>India’s trusted platform for Previous Year Question Papers & Mock Tests.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <a href="blog.html">Blog</a><br/>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div>
-      <h4>Exams</h4>
-      <a href="ssc-cgl.html">SSC</a><br/>
-      <a href="ibps-po.html">Banking</a>
-    </div>
-  </div>
-  <div class="copy">© 2025 PYQpaper.in – All Rights Reserved</div>
-</footer>
-
-<script src="assets/js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 
