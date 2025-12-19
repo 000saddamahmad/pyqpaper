@@ -1,25 +1,13 @@
 const menuToggle = document.getElementById("menuToggle");
-const mainMenu = document.getElementById("mainMenu");
-const dropdownTitles = document.querySelectorAll(".dropdown-title");
+const navMenu = document.getElementById("navMenu");
+const dropdownBtn = document.querySelector(".dropdown-btn");
+const dropdownParent = document.querySelector(".has-dropdown");
 
-// Mobile menu toggle
 menuToggle.addEventListener("click", () => {
-  mainMenu.classList.toggle("show");
+  navMenu.classList.toggle("active");
 });
 
-// Accordion dropdown (mobile)
-dropdownTitles.forEach(title => {
-  title.addEventListener("click", () => {
-
-    dropdownTitles.forEach(t => {
-      if (t !== title) {
-        t.nextElementSibling.style.display = "none";
-      }
-    });
-
-    const content = title.nextElementSibling;
-    content.style.display =
-      content.style.display === "block" ? "none" : "block";
-  });
+dropdownBtn.addEventListener("click", () => {
+  dropdownParent.classList.toggle("open");
 });
 
