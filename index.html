@@ -2,21 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PYQpaper.in – Previous Year Question Papers</title>
-  <meta name="description" content="Download SSC, UPSC, UPSSSC, UPPSC, MPPSC, BPSC, BSSC, DSSSB, KVS, NVS, EMRS, UPP, TGT, Banking, Railway, Defence, Teaching & UGC NET Previous Year Question Papers in PDF format." />
+  <meta name="description" content="Download Previous Year Question Papers (PYQs) year-wise for SSC, Banking, Railway, Defence, Teaching, Police, State PSC & UGC NET." />
   <meta name="robots" content="index, follow" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <header>
+<!-- Header with Multi-Level Dropdown -->
+<header>
   <div class="logo"><a href="/">PYQpaper.in</a></div>
 
   <button class="menu-toggle" id="menuToggle">☰</button>
@@ -46,7 +41,14 @@
               <li><a href="rbi-grade-b.html">RBI Grade B</a></li>
             </ul>
           </li>
-          <li><a href="rrb-ntpc.html">RRB NTPC</a></li>
+          <li class="has-dropdown">
+            <a href="#">Railway ▸</a>
+            <ul class="dropdown">
+              <li><a href="rrb-ntpc.html">RRB NTPC</a></li>
+              <li><a href="rrb-group-d.html">RRB Group D</a></li>
+              <li><a href="rrb-je.html">RRB JE</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
 
@@ -58,52 +60,57 @@
   </nav>
 </header>
 
-
-<!-- ================= HERO ================= -->
+<!-- Hero Section -->
 <section class="hero">
-  <div class="hero-content">
-    <h1>Previous Year Question Papers – Year Wise PDFs</h1>
+  <div>
+    <h1>Previous Year Question Papers – Year‑Wise PDFs</h1>
+    <p>SSC, Banking, Railway, Defence, Teaching, Police, State PSC & UGC NET PYQs with free mock tests.</p>
+    <a class="btn" href="#">Explore Exams</a>
+  </div>
+  <div class="card">
+    <h3>Why PYQpaper.in?</h3>
     <p>
-       SSC, UPSC, UPSSSC, UPPSC, MPPSC, BPSC, BSSC, DSSSB, KVS, NVS, EMRS, UPP, TGT, Banking, Railway, Defence, Teaching & UGC NET Previous Year Question Papers in PDF format.
+      ✔ High Performance<br>
+      ✔ Mobile Friendly<br>
+      ✔ SEO Optimized<br>
+      ✔ Free PDFs
     </p>
-    <a href="#exams" class="btn-primary">Explore Exams</a>
   </div>
 </section>
 
-<!-- ================= EXAMS ================= -->
-<section class="exams" id="exams">
+<!-- Popular Exams Section -->
+<section>
   <h2>Popular Exams</h2>
-
-  <div class="exam-grid">
-    <div class="exam-card">SSC CGL</div>
-    <div class="exam-card">SSC CHSL</div>
-    <div class="exam-card">IBPS PO</div>
-    <div class="exam-card">RRB NTPC</div>
-    <div class="exam-card">CTET</div>
-    <div class="exam-card">UGC NET</div>
+  <div class="grid">
+    <div class="card"><h3>SSC CGL</h3><p>2010 – 2024 PYQ PDFs</p></div>
+    <div class="card"><h3>SSC CHSL</h3><p>2012 – 2024 PYQ PDFs</p></div>
+    <div class="card"><h3>IBPS PO</h3><p>Pre + Mains Papers</p></div>
+    <div class="card"><h3>RRB NTPC</h3><p>CBT‑1 & CBT‑2</p></div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- Footer -->
 <footer>
-  <div class="footer-wrap">
+  <div class="fwrap">
     <div>
       <h3>PYQpaper.in</h3>
-      <p>India’s trusted platform for Previous Year Question Papers.</p>
+      <p>India’s trusted platform for Previous Year Question Papers & Mock Tests.</p>
     </div>
-
     <div>
       <h4>Quick Links</h4>
-      <a href="blog.html">Blog</a><br>
+      <a href="blog.html">Blog</a><br/>
       <a href="contact.html">Contact</a>
     </div>
+    <div>
+      <h4>Exams</h4>
+      <a href="ssc-cgl.html">SSC</a><br/>
+      <a href="ibps-po.html">Banking</a>
+    </div>
   </div>
-
-  <div class="copy">
-    © 2025 PYQpaper.in – All Rights Reserved
-  </div>
+  <div class="copy">© 2025 PYQpaper.in – All Rights Reserved</div>
 </footer>
 
 <script src="assets/js/script.js"></script>
 </body>
 </html>
+
