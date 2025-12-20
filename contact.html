@@ -2,88 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us – PYQpaper.in</title>
-  <meta name="description" content="Contact PYQpaper.in for exam related queries, feedback or support.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <title>Contact Us | PYQpaper.in</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyqpaper.in/assets/css/style.css">
 </head>
 <body>
 
-<!-- HEADER (same as homepage) -->
-<header class="header">
-  <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-
-    <li class="has-sub">
-      <a href="#">Exams</a>
-      <ul class="submenu">
-        <li><a href="ssc-cgl.html">SSC</a></li>
-        <li><a href="ibps-po.html">Banking</a></li>
-        <li><a href="rrb-ntpc.html">Railway</a></li>
-      </ul>
-    </li>
-
-    <li><a href="subjects.html">Subjects</a></li>
-    <li><a href="mock-tests.html">Mock Tests</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a class="active" href="contact.html">Contact</a></li>
-  </ul>
-</header>
-
-<!-- CONTACT SECTION -->
-<section class="contact-section">
   <div class="contact-container">
+    <form class="contact-form" action="https://formspree.io/f/mkowolkn" method="POST">
+      <h1>Contact Form</h1>
 
-    <!-- LEFT INFO -->
-    <div class="contact-info">
-      <h1>Contact PYQpaper.in</h1>
-      <p>
-        Agar aapko kisi exam ke PYQs, PDFs, ya website se related
-        koi query ho, to bina jhijhak humse contact karein.
-      </p>
+      <input type="text" name="first_name" placeholder="First Name" required>
+      <input type="text" name="last_name" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="message" placeholder="Enter your message" required></textarea>
 
-      <div class="info-box">
-        <strong>Email:</strong>
-        <span>support@pyqpaper.in</span>
-      </div>
-
-      <div class="info-box">
-        <strong>Website:</strong>
-        <span>www.pyqpaper.in</span>
-      </div>
-
-      <div class="info-box">
-        <strong>Response Time:</strong>
-        <span>24–48 Hours</span>
-      </div>
-    </div>
-
-    <!-- RIGHT FORM -->
-    <div class="contact-form">
-      <h2>Send Us a Message</h2>
-
-      <form>
-        <label>Name</label>
-        <input type="text" placeholder="Your Name" required>
-
-        <label>Email</label>
-        <input type="email" placeholder="Your Email" required>
-
-        <label>Message</label>
-        <textarea rows="5" placeholder="Write your message..." required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
+      <button type="submit">Send Message</button>
+    </form>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 PYQpaper.in – All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
