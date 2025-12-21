@@ -237,4 +237,84 @@ body {
   }
 }
 
+/* main body */
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+  font-size: 16px;
+}
+
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.exam-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.exam-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.exam-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.exam-card ul li {
+  margin-bottom: 6px;
+}
+
+.exam-card ul li a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.exam-card ul li a:hover {
+  text-decoration: underline;
+}
+
+.why-pyq {
+  margin-top: 40px;
+  padding: 30px;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.why-pyq h2 {
+  margin-bottom: 15px;
+}
+
+.why-pyq ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-pyq ul li {
+  margin-bottom: 8px;
+}
+
 
