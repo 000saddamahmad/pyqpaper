@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PYQPaper Blog</title>
+</head>
+
+<body>
+
+<h1>PYQPaper Blog</h1>
+
+<div id="blog-list"></div>
+
+<script>
+
+fetch("blog-data.json")
+.then(res => res.json())
+.then(data => {
+
+let container = document.getElementById("blog-list");
+
+data.forEach(blog => {
+
+container.innerHTML += `
+<h2>
+<a href="blog.html?id=${blog.id}">
+${blog.title}
+</a>
+</h2>
+
+<p>${blog.description}</p>
+`;
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
