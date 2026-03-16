@@ -264,6 +264,37 @@
   </section>
 
   <!-- WHY SECTION -->
+  <div id="blog-list"></div>
+
+</div>
+
+<script>
+
+fetch("blog-data.json")
+.then(res => res.json())
+.then(data => {
+
+let container = document.getElementById("blog-list");
+
+data.forEach(blog => {
+
+container.innerHTML += `
+<div class="blog">
+
+<a href="blog.html?id=${blog.id}">
+${blog.title}
+</a>
+
+<p>${blog.description}</p>
+
+</div>
+`;
+
+});
+
+});
+
+</script>
   <section class="why-pyq">
     <h2>Why PYQpaper.in?</h2>
     <ul>
