@@ -502,3 +502,10 @@ color:#555;
 margin-top:8px;
 font-size:15px;
 }
+/* Container */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
