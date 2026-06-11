@@ -119,7 +119,11 @@
 <loc>https://pyqpaper.in/teaching/kvs.html</loc>
 <priority>0.9</priority>
 </url>
-
+<!-- Allahabad High Court RO/ARO -->
+<url>
+    <loc>https://pyqpaper.in/Government/allahabad-high-court-ro-aro.html</loc>
+    <priority>0.9</priority>
+</url>
 <!-- UGC NET -->
 <url>
 <loc>https://pyqpaper.in/ugc-net/ugc-net-cs.html</loc>
